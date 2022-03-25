@@ -1,6 +1,6 @@
 window.addEventListener('keydown', playSound);
 
-function playSound() {
+function playSound(e) {
     //As we have two type of elements with the data attribute 'data-key' we must specify which element we want to retrieve 
     //So we further specify our css selector by putting audio next to the attribute
 
