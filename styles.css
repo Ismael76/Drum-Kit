@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Amatic SC", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+}
+
+.key-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+kbd {
+  font-size: 4rem;
+}
+
+.keys {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 20px black;
+  color: white;
+  transition: all 0.5s;
+}
+
+.playing {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 20px black;
+  border: 2px solid gold;
+}
+
+.sound {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: gold;
+  text-transform: uppercase;
+}
+
+.keys:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
